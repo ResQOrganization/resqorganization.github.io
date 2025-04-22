@@ -273,7 +273,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">RESQ</div>
+            <div class="logo">ResQ</div>
             <div class="status-indicator">
                 <div class="status-dot"></div>
                 <div class="status-text">Narukvica povezana</div>
@@ -354,24 +354,22 @@
                 <div class="form-group">
                     <label for="country">Država</label>
                     <select id="country">
+                        <option value="MNE">Crna Gora</option>
                         <option value="RS">Srbija</option>
-                        <option value="US">Sjedinjene Države</option>
-                        <option value="UK">Ujedinjeno Kraljevstvo</option>
-                        <option value="DE">Nemačka</option>
                         <option value="other">Drugo</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="police-number">Policija</label>
-                    <input type="tel" id="police-number" value="192">
+                    <input type="tel" id="police-number" value="122">
                 </div>
                 <div class="form-group">
                     <label for="ambulance-number">Hitna pomoć</label>
-                    <input type="tel" id="ambulance-number" value="194">
+                    <input type="tel" id="ambulance-number" value="124">
                 </div>
                 <div class="form-group">
                     <label for="fire-number">Vatrogasci</label>
-                    <input type="tel" id="fire-number" value="193">
+                    <input type="tel" id="fire-number" value="123">
                 </div>
                 <button class="btn">Sačuvaj brojeve</button>
             </div>
@@ -384,7 +382,7 @@
                 <div class="emergency-btn" id="emergency-trigger">
                     SOS
                 </div>
-                <div class="emergency-subtitle">Trenutna postavka: <span id="emergency-setting">Poziv hitnih službi (192)</span></div>
+                <div class="emergency-subtitle">Trenutna postavka: <span id="emergency-setting">Poziv hitnih službi (122)</span></div>
             </div>
         </div>
         
@@ -484,7 +482,7 @@
         // Touch support for mobile
         emergencyBtn.addEventListener('touchstart', function(e) {
             pressTimer = window.setTimeout(function() {
-                alert('Hitni poziv pokrenut! Pozivam 192...');
+                alert('Hitni poziv pokrenut! Pozivam 122...');
                 // In a real app, this would actually make the call
             }, 3000);
             e.preventDefault();
@@ -509,7 +507,7 @@
         });
         
         // Initialize displays
-        emergencyNumberDisplay.textContent = '192';
+        emergencyNumberDisplay.textContent = '122';
     </script>
 </body>
 </html>
