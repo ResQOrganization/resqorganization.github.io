@@ -403,7 +403,7 @@
                 </div>
                 <div class="settings-option">
                     <div class="settings-label">Poziv hitnih službi</div>
-                    <div class="settings-value" id="emergency-number-display">192</div>
+                    <div class="settings-value" id="emergency-number-display">122</div>
                 </div>
                 <div class="settings-option">
                     <div class="settings-label">Poziv ličnog kontakta</div>
@@ -466,7 +466,7 @@
         
         emergencyBtn.addEventListener('mousedown', function() {
             pressTimer = window.setTimeout(function() {
-                alert('Hitni poziv pokrenut! Pozivam 192...');
+                alert('Hitni poziv pokrenut! Pozivam 122...');
                 // In a real app, this would actually make the call
             }, 3000);
         });
@@ -500,7 +500,7 @@
         
         emergencyToggle.addEventListener('change', function() {
             if(this.checked) {
-                emergencySettingDisplay.textContent = 'Poziv hitnih službi (192)';
+                emergencySettingDisplay.textContent = 'Poziv hitnih službi (122)';
             } else {
                 emergencySettingDisplay.textContent = 'Poziv ličnog kontakta (Ana Anić)';
             }
